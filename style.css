@@ -1,0 +1,159 @@
+@charset "utf-8";
+body{
+    margin:0;
+    padding:0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menu_bar{
+    height: 80px;
+    width: 100%;
+    background-color: blueviolet;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.logo{
+    margin-top: -10px;}
+.logo img{
+    height: 100px;
+}
+.menu ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+}
+.menu a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    box-sizing: border-box;
+    border: 1px solid white;
+    padding: 10px;
+}
+.menu li:hover a{
+
+    color: blueviolet;
+    background-color: white;
+}
+.galeri{
+    background:url("/Users/mmdhpan/Desktop/responsive-brochure-site-lab/images/image1.jpeg") ;
+    width: 100%;
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.galeri .web{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+}
+.galeri a{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    text-decoration: none;
+    box-sizing: border-box;
+    border: 1px solid white;
+    background-color: green;
+}
+.galeri a:hover{
+    color: grey;
+    background-color: white;
+    padding: 10px;
+}
+.orta_alan{
+    display:flex;
+    width: 95%;
+    justify-content: space-around;
+}
+.orta{
+    width: 22%;
+    border:2px solid gray ;
+    border-radius: 15px;
+    margin: 2% 0;
+    box-sizing: border-box;
+    background-color: rgb(135, 147, 172,0.5);
+
+}
+.orta .icerik{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+.orta p{ text-indent: 15px;}
+.orta img{width: 50%;}
+
+.alt_alan{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 40vh;
+    background-color: black;
+    color: white;
+}
+.alt_alan .icerik{
+    width: 33%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: justify;
+    font-family: 'Courier New', Courier, monospace;
+}
+.alt_alan .SocialMedia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 40px;
+    border-top: 1px solid white;
+}
+
+
+@media only screen and (max-width:992px){
+
+    .orta_alan{ flex-wrap:wrap;}
+    .orta{ width: 48%;}
+    .orta img{width: 30%;}
+}
+
+@media only screen and (max-width:768px){
+    .menu_bar{flex-shrink: inherit;}
+    .menu_bar .logo{margin-left: 10%;}
+    .menu_bar .menu{margin-right: 10%;}
+    .menu_bar{
+        height: 110px;
+        width: 100%;
+        background-color: blueviolet;
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .menu ul li{
+            list-style-type: none;
+            display: inline-block;
+            padding: 2px;
+            margin: 2px;
+        }
+        .menu a{
+            color: white;
+            font-size: 10px;
+            text-decoration: none;
+            box-sizing: border-box;
+            border: 2px solid white;
+            padding: 7px;
+        }
+    }
